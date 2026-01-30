@@ -1,0 +1,128 @@
+{
+  "system": "LTO Backup System",
+  "version": "2.0.0",
+  "timestamp": "2026-01-30T21:55:47.080561",
+  "created_by": "Integrity Check Script",
+  "files": {
+    "config.yaml": {
+      "hash": "b6315448ec5b56136c9826e0be1134f2904e50775c4a62c90169de27d6a8c849",
+      "size": 1305,
+      "category": "core",
+      "algorithm": "sha256"
+    },
+    "lto_main.py": {
+      "hash": "9d5846eb06b2612167532fc33a87763bf0bfc3caeed610e2c773d7c0019749ff",
+      "size": 15047,
+      "category": "core",
+      "algorithm": "sha256"
+    },
+    "README.md": {
+      "hash": "707116ca7b6a4a5ccdeda5d160257bc48f7adec8de82a9a4cc4b8dd2799fb40a",
+      "size": 20261,
+      "category": "core",
+      "algorithm": "sha256"
+    },
+    "reference_checksums.json": {
+      "hash": "f4d3f0bdb617b73e89a306f78e79ad61d16276e1f83c77d6972f0f5e7ae3bff5",
+      "size": 7248,
+      "category": "other",
+      "algorithm": "sha256"
+    },
+    "check_integrity.sh": {
+      "hash": "408bba3a9622cc1e8a647c77fb448fda045cee8c336501c8a1181c52f92bebac",
+      "size": 2372,
+      "category": "other",
+      "algorithm": "sha256"
+    },
+    "integrity_report.json": {
+      "hash": "e9a92d297eb8d7e159eb097b1e3709ae017ce526600b0d2e2c6a3712e32207b0",
+      "size": 3703,
+      "category": "other",
+      "algorithm": "sha256"
+    },
+    "modules/__init__.py": {
+      "hash": "70b057d5823e8733a5f7f0130afac28eac508b1ac219c8e91e07b20b0b5183c5",
+      "size": 193,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/config_manager.py": {
+      "hash": "1e5767d5e68593c14c763cb43f0e35f1415cf9cd7d2fb53ad1c09650557e7918",
+      "size": 22207,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/system_monitor.py": {
+      "hash": "e1ff5cad7f159f0c945fb96369550ea9a55aee9985fd67d1b22990de65c44b34",
+      "size": 19599,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/tape_drive.py": {
+      "hash": "51b36fa974620e8ddbc31a20f575a63f72073b223dc7941e1fc7bc6278bf57b7",
+      "size": 24643,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/backup_job.py": {
+      "hash": "325a323879787446688668117e0eb1a68d9eec97ba335bc0bf040ecc1c4d717b",
+      "size": 31126,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/lto_logger.py": {
+      "hash": "7bf6c0b1703e6b7b70c2533850d34c336bb2932bc7f80c13680ed568d839d646",
+      "size": 22962,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/registry_manager.py": {
+      "hash": "981e27d63c25bb35d6e704bb05216d3380e0c0d914cece7ab116741dc9087087",
+      "size": 27548,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/core_tg.py": {
+      "hash": "476693691d29e1ff84a9802170ef7117851d00ba284582e64ec96421ed7fb4c4",
+      "size": 18619,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "modules/file_utils.py": {
+      "hash": "fb992e813f85f4a3150574438cde3fc52f89bd590c7c1e6027bb763a75758a37",
+      "size": 14459,
+      "category": "modules",
+      "algorithm": "sha256"
+    },
+    "scripts/check_deps.sh": {
+      "hash": "d7537b8e6ce2b25140d5c066a52b333f9363e61fa74ff5ec39919bdf87e516e1",
+      "size": 5817,
+      "category": "scripts",
+      "algorithm": "sha256"
+    },
+    "scripts/log_manager.py": {
+      "hash": "7f82cf22f154cfde8a63e7ff8335dc8fda047ccb6879aa7d378d92e1ab3e9dfc",
+      "size": 13748,
+      "category": "scripts",
+      "algorithm": "sha256"
+    },
+    "scripts/setup_security.py": {
+      "hash": "3782ecf0c19ae40f2c16a496ca44659bf04753a118e88ccf11d7c181452c3adb",
+      "size": 21800,
+      "category": "scripts",
+      "algorithm": "sha256"
+    },
+    "scripts/test_logging.py": {
+      "hash": "b6316a5a2b987016c973514d2fe3ab1ab8b0f7009125c122d828b53e5dc93a97",
+      "size": 12452,
+      "category": "scripts",
+      "algorithm": "sha256"
+    },
+    "scripts/check_integrity.py": {
+      "hash": "0edc9ad572ccb44a3f4cf2d48ffc67e15b81716ead4486a377f16b7c4ee2d72c",
+      "size": 26298,
+      "category": "scripts",
+      "algorithm": "sha256"
+    }
+  }
+}
