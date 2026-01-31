@@ -1,0 +1,118 @@
+# LTO Backup System Configuration
+# ================================
+
+common:
+  registry_csv: "backup_registry.csv"
+  manifest_dir: "./manifests"
+  log_level: "INFO"
+  retention_days: 90
+  
+hardware:
+  has_robot: false
+  robot_dev: "/dev/sg3"
+  tape_dev: "/dev/nst0"
+  err_threshold: 50
+  auto_rewind: true
+  
+mbuffer:
+  size: "2G"
+  fill_percent: "90%"
+  block_size: "256k"
+  change_script: "lto_backup change_tape"
+  min_rate: "100M"
+  max_rate: "150M"
+  
+telegram:
+  enabled: true
+  token: "YOUR_BOT_TOKEN_HERE"
+  chat_id: "YOUR_CHAT_ID_HERE"
+  notification_level: "INFO"
+  backup_started: true
+  backup_completed: true
+  backup_failed: true
+  tape_change: true
+  cleaning_required: true
+  
+backup:
+  compression: "none"
+  verify_after_backup: true
+  create_manifest: true
+  max_file_size: "100G"
+  split_large_files: true
+  
+exclude:
+  patterns:
+    - "/proc"
+    - "/sys"
+    - "/dev"
+    - "/run"
+    - "/tmp"
+    - "*.log"
+    - "*.tmp"
+    - "*.temp"
+    - ".git"
+    - ".svn"
+    - ".hg"
+    - ".DS_Store"
+    - "Thumbs.db"
+    - "*.pyc"
+    - "__pycache__"
+    - ".cache"
+    - ".npm"
+    - ".yarn"
+    
+  max_file_size: "10G"
+  min_file_size: "1k"
+  exclude_older_than: "365d"
+  exclude_newer_than: "0d"
+  
+paths:
+  important_dirs:
+    - "/etc"
+    - "/home"
+    - "/var/www"
+    - "/var/lib"
+    
+  excluded_dirs:
+    - "/var/tmp"
+    - "/var/cache"
+    
+scheduling:
+  enabled: false
+  daily_at: "02:00"
+  weekly_day: "sunday"
+  monthly_day: 1
+  retention_policy:
+    daily: 7
+    weekly: 4
+    monthly: 12
+    
+performance:
+  tar_threads: 2
+  io_buffer_size: "64M"
+  use_direct_io: true
+  sync_after_write: true
+  
+monitoring:
+  disk_space_warning: 10
+  tape_usage_warning: 90
+  email_alerts: false
+  email_to: "admin@example.com"
+  
+logging:
+  file: "/var/log/lto_backup.log"
+  max_size: "100M"
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  
+security:
+  encrypt_backups: false
+  gpg_key: ""
+  hash_verification: true
+  hash_algorithm: "sha256"
+  
+notifications:
+  sound_alerts: true
+  desktop_notifications: false
+  syslog_integration: true
